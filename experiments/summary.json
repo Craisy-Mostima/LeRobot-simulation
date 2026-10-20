@@ -1,0 +1,57 @@
+[
+  {
+    "task_id": "T01",
+    "scene": "B",
+    "instruction": "Put the milk in the basket.",
+    "status": "completed",
+    "episodes": 5,
+    "successes": 0,
+    "success_rate_percent": 0.0,
+    "max_steps": 520,
+    "error": ""
+  },
+  {
+    "task_id": "T02",
+    "scene": "B",
+    "instruction": "Put the ketchup in the basket.",
+    "status": "pending",
+    "episodes": "",
+    "successes": "",
+    "success_rate_percent": "",
+    "max_steps": 520,
+    "error": ""
+  },
+  {
+    "task_id": "T03",
+    "scene": "B",
+    "instruction": "Put the butter in the basket.",
+    "status": "pending",
+    "episodes": "",
+    "successes": "",
+    "success_rate_percent": "",
+    "max_steps": 520,
+    "error": ""
+  },
+  {
+    "task_id": "T04",
+    "scene": "A",
+    "instruction": "Put the black bowl on the stove.",
+    "status": "pending",
+    "episodes": "",
+    "successes": "",
+    "success_rate_percent": "",
+    "max_steps": 300,
+    "error": ""
+  },
+  {
+    "task_id": "T05",
+    "scene": "C",
+    "instruction": "Put the black book in the back compartment of the caddy.",
+    "status": "pending",
+    "episodes": "",
+    "successes": "",
+    "success_rate_percent": "",
+    "max_steps": 520,
+    "error": ""
+  }
+]

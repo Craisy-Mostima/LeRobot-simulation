@@ -1,0 +1,19 @@
+{
+  "protocol": {
+    "episodes": 5,
+    "model": "lerobot/smolvla_libero",
+    "device": "cuda",
+    "seed": 0,
+    "fixed_init_state": true,
+    "init_state_index": 0,
+    "empty_cameras": 1,
+    "video_fps": 20
+  },
+  "tasks": [
+    {"id": "T01", "scene": "B", "instruction": "Put the milk in the basket.", "slug": "put_the_milk_in_the_basket", "suite": "libero_10", "base_task_id": 0, "max_steps": 520, "goals": ["(In milk_1 basket_1_contain_region)"]},
+    {"id": "T02", "scene": "B", "instruction": "Put the ketchup in the basket.", "slug": "put_the_ketchup_in_the_basket", "suite": "libero_10", "base_task_id": 0, "max_steps": 520, "goals": ["(In ketchup_1 basket_1_contain_region)"]},
+    {"id": "T03", "scene": "B", "instruction": "Put the butter in the basket.", "slug": "put_the_butter_in_the_basket", "suite": "libero_10", "base_task_id": 0, "max_steps": 520, "goals": ["(In butter_1 basket_1_contain_region)"]},
+    {"id": "T04", "scene": "A", "instruction": "Put the black bowl on the stove.", "slug": "put_the_black_bowl_on_the_stove", "suite": "libero_goal", "base_task_id": 9, "max_steps": 300, "goals": ["(On akita_black_bowl_1 flat_stove_1_cook_region)"]},
+    {"id": "T05", "scene": "C", "instruction": "Put the black book in the back compartment of the caddy.", "slug": "put_the_black_book_in_the_back_compartment_of_the_caddy", "suite": "libero_10", "base_task_id": 5, "max_steps": 520, "goals": ["(In black_book_1 desk_caddy_1_back_contain_region)"]}
+  ]
+}

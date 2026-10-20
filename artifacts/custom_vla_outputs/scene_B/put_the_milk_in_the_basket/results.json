@@ -1,0 +1,49 @@
+{
+  "scene": "B",
+  "instruction": "Put the milk in the basket.",
+  "custom_bddl": "/root/lerobot/custom_libero_tasks/scene_B/put_the_milk_in_the_basket.bddl",
+  "model": "lerobot/smolvla_libero",
+  "device": "cuda",
+  "episodes": 5,
+  "n_success": 0,
+  "success_rate": 0.0,
+  "fixed_init_state": true,
+  "init_state_index": 0,
+  "results": [
+    {
+      "success": false,
+      "steps": 520,
+      "seed": 0,
+      "video": "/root/lerobot/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_00.mp4",
+      "episode": 0
+    },
+    {
+      "success": false,
+      "steps": 520,
+      "seed": 1,
+      "video": "/root/lerobot/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_01.mp4",
+      "episode": 1
+    },
+    {
+      "success": false,
+      "steps": 520,
+      "seed": 2,
+      "video": "/root/lerobot/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_02.mp4",
+      "episode": 2
+    },
+    {
+      "success": false,
+      "steps": 520,
+      "seed": 3,
+      "video": "/root/lerobot/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_03.mp4",
+      "episode": 3
+    },
+    {
+      "success": false,
+      "steps": 520,
+      "seed": 4,
+      "video": "/root/lerobot/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_04.mp4",
+      "episode": 4
+    }
+  ]
+}

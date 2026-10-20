@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.py -text
+*.mp4 binary
+*.png binary
+*.pdf binary
+*.md text eol=lf
+*.sh text eol=lf
+*.json text eol=lf
+artifacts/** -text
+course_scripts/*.py whitespace=-blank-at-eol
