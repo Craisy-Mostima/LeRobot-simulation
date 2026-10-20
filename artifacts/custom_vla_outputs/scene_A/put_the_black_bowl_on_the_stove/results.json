@@ -1,0 +1,49 @@
+{
+  "scene": "A",
+  "instruction": "Put the black bowl on the stove.",
+  "custom_bddl": "/root/lerobot/custom_libero_tasks/scene_A/put_the_black_bowl_on_the_stove.bddl",
+  "model": "lerobot/smolvla_libero",
+  "device": "cuda",
+  "episodes": 5,
+  "n_success": 2,
+  "success_rate": 0.4,
+  "fixed_init_state": true,
+  "init_state_index": 0,
+  "results": [
+    {
+      "success": true,
+      "steps": 141,
+      "seed": 0,
+      "video": "/root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_00.mp4",
+      "episode": 0
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "seed": 1,
+      "video": "/root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_01.mp4",
+      "episode": 1
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "seed": 2,
+      "video": "/root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_02.mp4",
+      "episode": 2
+    },
+    {
+      "success": true,
+      "steps": 199,
+      "seed": 3,
+      "video": "/root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_03.mp4",
+      "episode": 3
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "seed": 4,
+      "video": "/root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_04.mp4",
+      "episode": 4
+    }
+  ]
+}

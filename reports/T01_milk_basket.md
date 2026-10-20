@@ -159,4 +159,4 @@ Success Rate: 0 / 5 × 100% = 0.0%
 - [全部五次录像](../artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/)
 - [五次评测关键帧对照](../figures/五次评测关键帧对照.png)
 
-本稿覆盖已完成的 T01。T02–T05 的补充实验尚未完成，不能作为最终多任务报告提交。完整任务计划见 [实验计划](../experiments/plan.json)。课程要求来源为 [大作业操作指导](../docs/大作业操作指导.pdf)。
+本稿覆盖已完成的 T01。T02–T05 的补充实验现已完成，多任务对照与结果见 [完整报告](report.md)。完整任务计划见 [实验计划](../experiments/plan.json)。课程要求来源为 [大作业操作指导](../docs/大作业操作指导.pdf)。

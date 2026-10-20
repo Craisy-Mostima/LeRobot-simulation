@@ -1,0 +1,15 @@
+{
+  "scene": "B",
+  "scene_name": "Living Room Object Selection",
+  "base_suite": "libero_10",
+  "base_task_id": 0,
+  "instruction": "Put the ketchup in the basket.",
+  "goals": [
+    "(In ketchup_1 basket_1_contain_region)"
+  ],
+  "obj_of_interest": [
+    "ketchup_1",
+    "basket_1_contain_region"
+  ],
+  "bddl_file": "/root/lerobot/custom_libero_tasks/scene_B/put_the_ketchup_in_the_basket.bddl"
+}

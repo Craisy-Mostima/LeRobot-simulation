@@ -1,0 +1,188 @@
+COMMAND ["/root/autodl-tmp/course/conda-envs/lerobot/bin/python", "-u", "/root/autodl-tmp/course/LeRobot-simulation-workflow/course_scripts/custom_vla_eval.py", "--task", "/root/autodl-tmp/course/lerobot/custom_libero_tasks/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy.json", "--model", "lerobot/smolvla_libero", "--episodes", "5", "--device", "cuda", "--seed", "0", "--init-state-index", "0"]
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /root/autodl-tmp/course/conda-envs/lerobot/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /root/autodl-tmp/course/conda-envs/lerobot/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+
+==============================================================================
+CUSTOM SmolVLA + LIBERO EVALUATION
+==============================================================================
+
+Scene             : C
+Base suite        : libero_10
+Base task ID      : 5
+Instruction       : Put the black book in the back compartment of the caddy.
+Custom BDDL       : /root/lerobot/custom_libero_tasks/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy.bddl
+Model             : lerobot/smolvla_libero
+Device            : cuda
+Episodes          : 5
+Max steps         : 520
+Observation size  : 256x256
+Fixed init state  : True
+Init state index  : 0
+
+Loading policy configuration...
+
+Camera mapping:
+{
+  "agentview_image": "camera1",
+  "robot0_eye_in_hand_image": "camera2"
+}
+
+Loading SmolVLA weights: lerobot/smolvla_libero
+This may use the local Hugging Face cache if already downloaded.
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]
+Loading weights:  42%|████▏     | 205/489 [00:00<00:00, 2045.62it/s]
+Loading weights:  84%|████████▍ | 410/489 [00:00<00:00, 1318.09it/s]
+Loading weights: 100%|██████████| 489/489 [00:00<00:00, 1269.92it/s]
+Reducing the number of VLM layers to 16 ...
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /root/.cache/libero/assets
+
+Running episode | seed=0 | max_steps=520
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+  step 300 | success=False
+  step 325 | success=False
+  step 350 | success=False
+  step 375 | success=False
+  step 400 | success=False
+  step 425 | success=False
+  step 450 | success=False
+  step 475 | success=False
+  step 500 | success=False
+Episode finished | steps=520 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_00.mp4
+
+Running episode | seed=1 | max_steps=520
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+  step 300 | success=False
+  step 325 | success=False
+  step 350 | success=False
+  step 375 | success=False
+  step 400 | success=False
+  step 425 | success=False
+  step 450 | success=False
+  step 475 | success=False
+  step 500 | success=False
+Episode finished | steps=520 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_01.mp4
+
+Running episode | seed=2 | max_steps=520
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+  step 300 | success=False
+  step 325 | success=False
+  step 350 | success=False
+  step 375 | success=False
+  step 400 | success=False
+  step 425 | success=False
+  step 450 | success=False
+  step 475 | success=False
+  step 500 | success=False
+Episode finished | steps=520 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_02.mp4
+
+Running episode | seed=3 | max_steps=520
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+  step 300 | success=False
+  step 325 | success=False
+  step 350 | success=False
+  step 375 | success=False
+  step 400 | success=False
+  step 425 | success=False
+  step 450 | success=False
+  step 475 | success=False
+  step 500 | success=False
+Episode finished | steps=520 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_03.mp4
+
+Running episode | seed=4 | max_steps=520
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+  step 300 | success=False
+  step 325 | success=False
+  step 350 | success=False
+  step 375 | success=False
+  step 400 | success=False
+  step 425 | success=False
+  step 450 | success=False
+  step 475 | success=False
+  step 500 | success=False
+Episode finished | steps=520 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_04.mp4
+
+==============================================================================
+EVALUATION COMPLETE
+==============================================================================
+Episode 00: FAILURE | steps=520
+Episode 01: FAILURE | steps=520
+Episode 02: FAILURE | steps=520
+Episode 03: FAILURE | steps=520
+Episode 04: FAILURE | steps=520
+
+Success rate: 0/5 = 0.0%
+
+Output directory:
+/root/lerobot/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy
+
+Results JSON:
+/root/lerobot/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/results.json

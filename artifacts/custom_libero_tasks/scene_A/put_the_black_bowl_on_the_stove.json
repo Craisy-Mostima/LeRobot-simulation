@@ -1,0 +1,15 @@
+{
+  "scene": "A",
+  "scene_name": "Kitchen Manipulation",
+  "base_suite": "libero_goal",
+  "base_task_id": 9,
+  "instruction": "Put the black bowl on the stove.",
+  "goals": [
+    "(On akita_black_bowl_1 flat_stove_1_cook_region)"
+  ],
+  "obj_of_interest": [
+    "akita_black_bowl_1",
+    "flat_stove_1_cook_region"
+  ],
+  "bddl_file": "/root/lerobot/custom_libero_tasks/scene_A/put_the_black_bowl_on_the_stove.bddl"
+}

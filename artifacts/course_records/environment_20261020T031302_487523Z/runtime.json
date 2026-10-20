@@ -1,0 +1,27 @@
+{
+  "utc": "20261020T031302_906641Z",
+  "python": "3.12.15 (main, Oct 13 2026, 16:52:04) [GCC 15.3.0]",
+  "python_executable": "/root/autodl-tmp/course/conda-envs/lerobot/bin/python",
+  "platform": "Linux-5.15.0-136-generic-x86_64-with-glibc2.35",
+  "protocol": {
+    "episodes": 5,
+    "model": "lerobot/smolvla_libero",
+    "device": "cuda",
+    "seed": 0,
+    "fixed_init_state": true,
+    "init_state_index": 0,
+    "empty_cameras": 1,
+    "video_fps": 20
+  },
+  "course_scripts_sha256": {
+    "custom_vla_eval.py": "933f80e6db90cd9c74d859b035d471118643177246a523c5ded5fb8d9cf8a725",
+    "libero_custom_task_builder.py": "da649d7e9ff9204cc5cfdcb307aaa9b7040f95a77e29420bb595a7690426341e"
+  },
+  "environment": {
+    "HF_HOME": "/root/autodl-tmp/course/huggingface",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "MUJOCO_GL": "egl",
+    "MPLBACKEND": "Agg"
+  }
+}

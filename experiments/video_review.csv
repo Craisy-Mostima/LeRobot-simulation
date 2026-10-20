@@ -1,26 +1,26 @@
-﻿task_id,episode,video,reviewed,observation,cause_hypothesis
-T01,0,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_00.mp4,yes,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；步数用尽，牛奶仍在篮外。,未定位唯一底层原因
-T01,1,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_01.mp4,yes,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；步数用尽，牛奶仍在篮外。,未定位唯一底层原因
-T01,2,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_02.mp4,yes,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；步数用尽，牛奶仍在篮外。,未定位唯一底层原因
-T01,3,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_03.mp4,yes,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；步数用尽，牛奶仍在篮外。,未定位唯一底层原因
-T01,4,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_04.mp4,yes,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；步数用尽，牛奶仍在篮外。,未定位唯一底层原因
-T02,0,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_00.mp4,pending,,
-T02,1,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_01.mp4,pending,,
-T02,2,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_02.mp4,pending,,
-T02,3,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_03.mp4,pending,,
-T02,4,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_04.mp4,pending,,
-T03,0,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_00.mp4,pending,,
-T03,1,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_01.mp4,pending,,
-T03,2,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_02.mp4,pending,,
-T03,3,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_03.mp4,pending,,
-T03,4,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_04.mp4,pending,,
-T04,0,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_00.mp4,pending,,
-T04,1,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_01.mp4,pending,,
-T04,2,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_02.mp4,pending,,
-T04,3,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_03.mp4,pending,,
-T04,4,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_04.mp4,pending,,
-T05,0,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_00.mp4,pending,,
-T05,1,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_01.mp4,pending,,
-T05,2,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_02.mp4,pending,,
-T05,3,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_03.mp4,pending,,
-T05,4,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_04.mp4,pending,,
+﻿task_id,episode,video,reviewed,method,result,steps,observation,cause_hypothesis
+T01,0,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_00.mp4,yes,跨时段抽帧复核；T01另有接触阶段细查,FAILURE,520,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；牛奶留在篮外。,未通过消融定位唯一底层原因
+T01,1,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_01.mp4,yes,跨时段抽帧复核；T01另有接触阶段细查,FAILURE,520,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；牛奶留在篮外。,未通过消融定位唯一底层原因
+T01,2,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_02.mp4,yes,跨时段抽帧复核；T01另有接触阶段细查,FAILURE,520,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；牛奶留在篮外。,未通过消融定位唯一底层原因
+T01,3,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_03.mp4,yes,跨时段抽帧复核；T01另有接触阶段细查,FAILURE,520,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；牛奶留在篮外。,未通过消融定位唯一底层原因
+T01,4,artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_04.mp4,yes,跨时段抽帧复核；T01另有接触阶段细查,FAILURE,520,接近并扰动牛奶；未建立稳定抓持搬运；后续未恢复；牛奶留在篮外。,未通过消融定位唯一底层原因
+T02,0,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_00.mp4,yes,跨时段抽帧复核,FAILURE,520,主要在牛奶等邻物附近操作，部分帧见牛奶姿态变化；未见番茄酱持续搬运入篮。,未通过消融定位唯一底层原因
+T02,1,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_01.mp4,yes,跨时段抽帧复核,FAILURE,520,主要在牛奶等邻物附近操作，部分帧见牛奶姿态变化；未见番茄酱持续搬运入篮。,未通过消融定位唯一底层原因
+T02,2,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_02.mp4,yes,跨时段抽帧复核,FAILURE,520,主要在牛奶等邻物附近操作，部分帧见牛奶姿态变化；未见番茄酱持续搬运入篮。,未通过消融定位唯一底层原因
+T02,3,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_03.mp4,yes,跨时段抽帧复核,FAILURE,520,主要在牛奶等邻物附近操作，部分帧见牛奶姿态变化；未见番茄酱持续搬运入篮。,未通过消融定位唯一底层原因
+T02,4,artifacts/custom_vla_outputs/scene_B/put_the_ketchup_in_the_basket/episode_04.mp4,yes,跨时段抽帧复核,FAILURE,520,主要在牛奶等邻物附近操作，部分帧见牛奶姿态变化；未见番茄酱持续搬运入篮。,未通过消融定位唯一底层原因
+T03,0,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_00.mp4,yes,跨时段抽帧复核,FAILURE,520,接触、推动牛奶等非目标物体；牛奶发生明显位移或姿态变化，黄油未入篮。,未通过消融定位唯一底层原因
+T03,1,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_01.mp4,yes,跨时段抽帧复核,FAILURE,520,接触、推动牛奶等非目标物体；牛奶发生明显位移或姿态变化，黄油未入篮。,未通过消融定位唯一底层原因
+T03,2,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_02.mp4,yes,跨时段抽帧复核,FAILURE,520,接触、推动牛奶等非目标物体；牛奶发生明显位移或姿态变化，黄油未入篮。,未通过消融定位唯一底层原因
+T03,3,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_03.mp4,yes,跨时段抽帧复核,FAILURE,520,接触、推动牛奶等非目标物体；牛奶发生明显位移或姿态变化，黄油未入篮。,未通过消融定位唯一底层原因
+T03,4,artifacts/custom_vla_outputs/scene_B/put_the_butter_in_the_basket/episode_04.mp4,yes,跨时段抽帧复核,FAILURE,520,接触、推动牛奶等非目标物体；牛奶发生明显位移或姿态变化，黄油未入篮。,未通过消融定位唯一底层原因
+T04,0,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_00.mp4,yes,跨时段抽帧复核,SUCCESS,141,碗随夹爪移动；运行触发 Goal 后结束，未另行验证撤爪后长期稳定性。,未通过消融定位唯一底层原因
+T04,1,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_01.mp4,yes,跨时段抽帧复核,FAILURE,300,接触、移动黑碗，结束时未满足炉灶放置 Goal。,未通过消融定位唯一底层原因
+T04,2,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_02.mp4,yes,跨时段抽帧复核,FAILURE,300,接触、移动黑碗，结束时未满足炉灶放置 Goal。,未通过消融定位唯一底层原因
+T04,3,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_03.mp4,yes,跨时段抽帧复核,SUCCESS,199,碗随夹爪移动；运行触发 Goal 后结束，未另行验证撤爪后长期稳定性。,未通过消融定位唯一底层原因
+T04,4,artifacts/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_04.mp4,yes,跨时段抽帧复核,FAILURE,300,接触、移动黑碗，结束时未满足炉灶放置 Goal。,未通过消融定位唯一底层原因
+T05,0,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_00.mp4,yes,跨时段抽帧复核,FAILURE,520,机械臂接近或接触杯子；黑书仍在桌面，未进入收纳架后格。,未通过消融定位唯一底层原因
+T05,1,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_01.mp4,yes,跨时段抽帧复核,FAILURE,520,机械臂接近或接触杯子；黑书仍在桌面，未进入收纳架后格。杯子出现位移。,未通过消融定位唯一底层原因
+T05,2,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_02.mp4,yes,跨时段抽帧复核,FAILURE,520,机械臂接近或接触杯子；黑书仍在桌面，未进入收纳架后格。,未通过消融定位唯一底层原因
+T05,3,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_03.mp4,yes,跨时段抽帧复核,FAILURE,520,机械臂接近或接触杯子；黑书仍在桌面，未进入收纳架后格。杯子出现位移。,未通过消融定位唯一底层原因
+T05,4,artifacts/custom_vla_outputs/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy/episode_04.mp4,yes,跨时段抽帧复核,FAILURE,520,机械臂接近或接触杯子；黑书仍在桌面，未进入收纳架后格。杯子出现倾倒。,未通过消融定位唯一底层原因

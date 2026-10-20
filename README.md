@@ -2,15 +2,15 @@
 
 使用 **LeRobot v0.6.1、LIBERO、SmolVLA**，在 AutoDL RTX 3090 上运行课程原版脚本。项目保存任务定义、原始统计、日志、全部 rollout 录像与分析；没有训练或微调模型。
 
-**当前进度：1/5 个任务完成，共 5/25 次正式评测。** 其余四个任务属于待执行计划，不能计入成功率。完成补充实验并逐段检查视频后，再形成最终报告。
+**五个任务、25 次正式评测已完成，成功 2 次，总成功率 8%。** 全部原始视频约 27.6 MB，与代码、任务、日志、结果和环境快照一起保存。各视频均已检查格式并抽帧复核；[完整报告](reports/report.md)区分了行为观察与未经验证的原因。
 
 | ID | 场景 | 指令 | Episodes | 成功数 / 成功率 | 状态 |
 | --- | --- | --- | --- | --- | --- |
 | T01 | B | Put the milk in the basket. | 5 | 0/5，0.0% | 已完成并检查五段视频 |
-| T02 | B | Put the ketchup in the basket. | — | 待测 | 已计划 |
-| T03 | B | Put the butter in the basket. | — | 待测 | 已计划 |
-| T04 | A | Put the black bowl on the stove. | — | 待测 | 已计划 |
-| T05 | C | Put the black book in the back compartment of the caddy. | — | 待测 | 已计划 |
+| T02 | B | Put the ketchup in the basket. | 5 | 0/5，0.0% | 已完成 |
+| T03 | B | Put the butter in the basket. | 5 | 0/5，0.0% | 已完成 |
+| T04 | A | Put the black bowl on the stove. | 5 | 2/5，40.0% | 已完成 |
+| T05 | C | Put the black book in the back compartment of the caddy. | 5 | 0/5，0.0% | 已完成 |
 
 五个任务、每个五次是本项目的实验设计。课程建议每个最终任务至少五次，没有规定必须选五种任务。不同场景使用课程脚本各自默认的步数上限：A 为 300，B/C 为 520；每个任务固定初始状态索引 0，seeds 0–4。五次重复不等于五个不同布局。
 
@@ -20,7 +20,9 @@
 - 配置与复现说明：[运行环境](docs/environment.md)。
 - 计划及机器可读结果：[plan.json](experiments/plan.json)、[summary.csv](experiments/summary.csv)。
 - 已完成分析：[牛奶入篮报告](reports/T01_milk_basket.md)。
-- 多任务报告：[待完成草稿](reports/report.md)。
+- 多任务报告：[结果与视频分析](reports/report.md)。
+- 全部附件：[25 段视频索引](docs/artifacts.md)、[原始日志与环境](artifacts/course_records/)。
+- 后续更新：[GitHub 上传方法](docs/github-upload.md)。
 - 原始课程要求：[PDF](docs/大作业操作指导.pdf)。
 
 ## 已完成的牛奶入篮任务
@@ -37,7 +39,15 @@
 | 03 | 3 | FAILURE | 520 | [播放 / 下载](artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_03.mp4) |
 | 04 | 4 | FAILURE | 520 | [播放 / 下载](artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_04.mp4) |
 
-GitHub 的文件页是否内嵌播放取决于页面支持；链接始终保留完整原视频，可用 Raw 下载。视频每段约 1.3 MB，目前直接存入 Git，无需 LFS。未来单文件大于 100 MiB 时需使用 LFS 或 Release，参见 [GitHub 文件大小限制](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
+GitHub 的文件页是否内嵌播放取决于页面支持；链接保留完整原视频，可用 Raw 下载。25 段视频总计 27,600,900 字节，最大单段约 1.35 MB，目前直接存入 Git，无需 LFS。未来单文件大于 100 MiB 时需使用 LFS 或 Release，参见 [GitHub 文件大小限制](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
+
+## 成功与失败的对照
+
+黑碗任务的 Episode 00、03 分别在 141、199 步触发成功；其余三次达到 300 步上限。以下拼图按行对应五次运行，PASS/FAIL 标签来自原始结果，时间是视频播放时间。拼图展示全时段抽样帧，不替代完整视频。
+
+![黑碗任务的五次运行](figures/timelines/T04.png)
+
+番茄酱与黄油任务中，关键帧显示机械臂接触、扰动牛奶等邻近物体；黑书任务中出现对杯子的接触和移位，而书没有进入后格。这些是所选固定布局下的行为现象，不能仅凭录像确定模型、输入处理或动作适配中的唯一原因。
 
 ## 项目内容
 

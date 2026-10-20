@@ -2,7 +2,7 @@
 
 ## 已确认的运行环境
 
-2026-10-20，AutoDL 云端实例：Ubuntu 22.04 基础镜像、RTX 3090 24GB、Python 3.12.15、PyTorch 2.8.0+cu128、torchvision 0.23.0、MuJoCo 3.8.1、LeRobot v0.6.1。CUDA 可用，EGL 创建成功，官方单任务 smoke test 完成。完整 `pip freeze` 等将在补充批次开始时由工作流实际采集；此处不是所有依赖的完整锁文件。
+2026-10-20，AutoDL 云端实例：Ubuntu 22.04 基础镜像、RTX 3090 24GB、Python 3.12.15、PyTorch 2.8.0+cu128、torchvision 0.23.0、MuJoCo 3.8.1、LeRobot v0.6.1。CUDA 可用，EGL 创建成功，官方单任务 smoke test 完成。完整 `pip freeze`、GPU 与源码版本已由工作流实际采集，见 [环境快照](../artifacts/course_records/environment_20261020T031302_487523Z/)。
 
 ```text
 源码                 /root/autodl-tmp/course/lerobot

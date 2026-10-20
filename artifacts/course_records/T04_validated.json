@@ -1,0 +1,10 @@
+{
+  "task_id": "T04",
+  "initial_goal_satisfied": false,
+  "log": "T04_prepare_20261020T031031_530699Z.log",
+  "files": {
+    ".json": "61ab8c7a39f81fbd74cd79c7206d2144430da275f8ca8905952018c6f6b26214",
+    ".bddl": "b51c95420db743023b698c052f3be6988b605d39965707794b31e81ec62039bc",
+    ".png": "a9f4348a7ee8f62641f8a31ed34f4d0a784bf0bf151d458e686732689a3cfa4d"
+  }
+}

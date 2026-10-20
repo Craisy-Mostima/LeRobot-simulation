@@ -1,4 +1,4 @@
-# 在现有 AutoDL 实例补完实验
+# AutoDL 批量实验操作记录与复现步骤
 
 本步骤面向已验收 CUDA、EGL、SmolVLA，且已完成牛奶任务的实例。无需重装环境、重新克隆 LeRobot 或重新下载模型。
 
@@ -75,4 +75,4 @@ python tools/import_results.py ../course_all_results.tar.gz
 
 所有新增录像逐段检查：选中物体、抓持、搬运、放置、邻物碰撞、恢复、结束条件。填写 `experiments/video_review.csv`，把观察与假设区分开。保留全部失败视频，并选有代表性的成功/失败关键帧。
 
-接下来更新自动汇总和七部分报告，核对引用与原始结果，再统一推送到目标仓库 `Craisy-Mostima/LeRobot-simulation`。目前本地项目只是准备状态，新增四个任务还没有成绩，不能写成已完成的 25 次实验。
+接下来更新自动汇总和七部分报告，核对引用与原始结果，再统一推送到目标仓库 `Craisy-Mostima/LeRobot-simulation`。本次五任务 25 次评测现已全部完成，结果见 [统计汇总](../experiments/summary.csv)。本页保留实际操作步骤供复现。

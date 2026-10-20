@@ -1,6 +1,6 @@
 ﻿task_id,scene,instruction,status,episodes,successes,success_rate_percent,max_steps,error
 T01,B,Put the milk in the basket.,completed,5,0,0.0,520,
-T02,B,Put the ketchup in the basket.,pending,,,,520,
-T03,B,Put the butter in the basket.,pending,,,,520,
-T04,A,Put the black bowl on the stove.,pending,,,,300,
-T05,C,Put the black book in the back compartment of the caddy.,pending,,,,520,
+T02,B,Put the ketchup in the basket.,completed,5,0,0.0,520,
+T03,B,Put the butter in the basket.,completed,5,0,0.0,520,
+T04,A,Put the black bowl on the stove.,completed,5,2,40.0,300,
+T05,C,Put the black book in the back compartment of the caddy.,completed,5,0,0.0,520,

@@ -1,0 +1,15 @@
+{
+  "scene": "C",
+  "scene_name": "Study Desk Spatial Task",
+  "base_suite": "libero_10",
+  "base_task_id": 5,
+  "instruction": "Put the black book in the back compartment of the caddy.",
+  "goals": [
+    "(In black_book_1 desk_caddy_1_back_contain_region)"
+  ],
+  "obj_of_interest": [
+    "black_book_1",
+    "desk_caddy_1_back_contain_region"
+  ],
+  "bddl_file": "/root/lerobot/custom_libero_tasks/scene_C/put_the_black_book_in_the_back_compartment_of_the_caddy.bddl"
+}

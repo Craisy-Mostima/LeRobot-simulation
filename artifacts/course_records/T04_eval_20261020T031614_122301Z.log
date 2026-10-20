@@ -1,0 +1,137 @@
+COMMAND ["/root/autodl-tmp/course/conda-envs/lerobot/bin/python", "-u", "/root/autodl-tmp/course/LeRobot-simulation-workflow/course_scripts/custom_vla_eval.py", "--task", "/root/autodl-tmp/course/lerobot/custom_libero_tasks/scene_A/put_the_black_bowl_on_the_stove.json", "--model", "lerobot/smolvla_libero", "--episodes", "5", "--device", "cuda", "--seed", "0", "--init-state-index", "0"]
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /root/autodl-tmp/course/conda-envs/lerobot/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /root/autodl-tmp/course/conda-envs/lerobot/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+
+==============================================================================
+CUSTOM SmolVLA + LIBERO EVALUATION
+==============================================================================
+
+Scene             : A
+Base suite        : libero_goal
+Base task ID      : 9
+Instruction       : Put the black bowl on the stove.
+Custom BDDL       : /root/lerobot/custom_libero_tasks/scene_A/put_the_black_bowl_on_the_stove.bddl
+Model             : lerobot/smolvla_libero
+Device            : cuda
+Episodes          : 5
+Max steps         : 300
+Observation size  : 256x256
+Fixed init state  : True
+Init state index  : 0
+
+Loading policy configuration...
+
+Camera mapping:
+{
+  "agentview_image": "camera1",
+  "robot0_eye_in_hand_image": "camera2"
+}
+
+Loading SmolVLA weights: lerobot/smolvla_libero
+This may use the local Hugging Face cache if already downloaded.
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 138/489 [00:00<00:00, 1045.90it/s]
+Loading weights:  50%|████▉     | 243/489 [00:00<00:00, 1026.32it/s]
+Loading weights:  71%|███████▏  | 349/489 [00:00<00:00, 1039.55it/s]
+Loading weights:  93%|█████████▎| 456/489 [00:00<00:00, 1050.83it/s]
+Loading weights: 100%|██████████| 489/489 [00:00<00:00, 1109.94it/s]
+Reducing the number of VLM layers to 16 ...
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /root/.cache/libero/assets
+
+Running episode | seed=0 | max_steps=300
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 140 | success=True
+Episode finished | steps=141 | SUCCESS
+Saving video: /root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_00.mp4
+
+Running episode | seed=1 | max_steps=300
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+Episode finished | steps=300 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_01.mp4
+
+Running episode | seed=2 | max_steps=300
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+Episode finished | steps=300 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_02.mp4
+
+Running episode | seed=3 | max_steps=300
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 198 | success=True
+Episode finished | steps=199 | SUCCESS
+Saving video: /root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_03.mp4
+
+Running episode | seed=4 | max_steps=300
+  step 000 | success=False
+  step 025 | success=False
+  step 050 | success=False
+  step 075 | success=False
+  step 100 | success=False
+  step 125 | success=False
+  step 150 | success=False
+  step 175 | success=False
+  step 200 | success=False
+  step 225 | success=False
+  step 250 | success=False
+  step 275 | success=False
+Episode finished | steps=300 | FAILURE
+Saving video: /root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/episode_04.mp4
+
+==============================================================================
+EVALUATION COMPLETE
+==============================================================================
+Episode 00: SUCCESS | steps=141
+Episode 01: FAILURE | steps=300
+Episode 02: FAILURE | steps=300
+Episode 03: SUCCESS | steps=199
+Episode 04: FAILURE | steps=300
+
+Success rate: 2/5 = 40.0%
+
+Output directory:
+/root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove
+
+Results JSON:
+/root/lerobot/custom_vla_outputs/scene_A/put_the_black_bowl_on_the_stove/results.json

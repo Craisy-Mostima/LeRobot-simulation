@@ -1,0 +1,87 @@
+COMMAND ["/root/autodl-tmp/course/conda-envs/lerobot/bin/python", "-u", "/root/autodl-tmp/course/LeRobot-simulation-workflow/course_scripts/libero_custom_task_builder.py"]
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /root/autodl-tmp/course/conda-envs/lerobot/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+========================================================================
+LIBERO CUSTOM TASK BUILDER
+========================================================================
+
+Scene A: Kitchen Manipulation
+Objects: black bowl, cream cheese, wine bottle, plate. Fixtures/targets: wooden cabinet drawers/top, flat stove, wine rack, stove-front table region.
+Examples:
+  - Put the black bowl on the stove.
+  - Put the wine bottle on top of the cabinet.
+  - Put the cream cheese on the black bowl.
+  - Put the black bowl in the top drawer.
+  - Open the middle drawer.
+  - Turn on the stove.
+  - Push the plate to the front of the stove.
+
+Scene B: Living Room Object Selection
+Objects: alphabet soup, cream cheese, tomato sauce, ketchup, orange juice, milk, butter. Target: basket.
+Examples:
+  - Put the milk in the basket.
+  - Place the ketchup inside the basket.
+  - Move the butter into the basket.
+  - Put the milk and butter in the basket.
+
+Scene C: Study Desk Spatial Task
+Objects: black book, white-yellow mug. Targets: front/back/left/right compartments of desk caddy, plus the table region to the right of the caddy.
+Examples:
+  - Put the black book in the back compartment of the caddy.
+  - Place the mug in the left compartment of the caddy.
+  - Move the black book to the right of the desk caddy.
+
+Choose Scene [A/B/C]: 
+Selected:
+Scene B - Living Room Object Selection
+
+Enter ONE English task instruction.
+Use objects and targets that already exist in this scene.
+
+Instruction: 
+========================================================================
+TASK INTERPRETATION
+========================================================================
+
+Instruction:
+Put the ketchup in the basket.
+
+Interpreted goal(s):
+ - In: ketchup_1 -> basket.
+
+Generated BDDL predicate(s):
+  (In ketchup_1 basket_1_contain_region)
+
+Generate and validate this task? [y/N]: [info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+========================================================================
+CUSTOM TASK PARSED SUCCESSFULLY
+========================================================================
+
+Language:
+['put', 'the', 'ketchup', 'in', 'the', 'basket.']
+
+Goal:
+  ['in', 'ketchup_1', 'basket_1_contain_region']
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /root/.cache/libero/assets
+
+Initial goal already satisfied?: False
+
+Custom BDDL:
+/root/lerobot/custom_libero_tasks/scene_B/put_the_ketchup_in_the_basket.bddl
+
+Metadata:
+/root/lerobot/custom_libero_tasks/scene_B/put_the_ketchup_in_the_basket.json
+
+Preview image:
+/root/lerobot/custom_libero_tasks/scene_B/put_the_ketchup_in_the_basket.png
+
+========================================================================
+DONE
+========================================================================
+
+This script has created and validated the task definition only.
+It has NOT run SmolVLA yet.
