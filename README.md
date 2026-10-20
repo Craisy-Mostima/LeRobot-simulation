@@ -39,7 +39,7 @@
 | 03 | 3 | FAILURE | 520 | [播放 / 下载](artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_03.mp4) |
 | 04 | 4 | FAILURE | 520 | [播放 / 下载](artifacts/custom_vla_outputs/scene_B/put_the_milk_in_the_basket/episode_04.mp4) |
 
-GitHub 的文件页是否内嵌播放取决于页面支持；链接保留完整原视频，可用 Raw 下载。25 段视频总计 27,600,900 字节，最大单段约 1.35 MB，目前直接存入 Git，无需 LFS。未来单文件大于 100 MiB 时需使用 LFS 或 Release，参见 [GitHub 文件大小限制](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
+GitHub 的文件页是否内嵌播放取决于页面支持；链接保留完整原视频，可用 Raw 下载。25 段视频总计 27,600,900 字节，最大单段约 1.42 MB，目前直接存入 Git，无需 LFS。未来单文件大于 100 MiB 时需使用 LFS 或 Release，参见 [GitHub 文件大小限制](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
 
 ## 成功与失败的对照
 

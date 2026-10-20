@@ -6,5 +6,5 @@
 *.md text eol=lf
 *.sh text eol=lf
 *.json text eol=lf
-artifacts/** -text
+artifacts/** -text whitespace=-blank-at-eol,cr-at-eol
 course_scripts/*.py whitespace=-blank-at-eol
